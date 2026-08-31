@@ -1,0 +1,48 @@
+{
+    "name": "automateflow/laravel",
+    "description": "Connect a Laravel application to an AutomateFlow workspace: sync contacts, send mail through the transactional API, embed subscription forms, trigger automations, and receive signed webhooks.",
+    "keywords": ["laravel", "automateflow", "email", "marketing", "automation", "transactional"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/http": "^11.0|^12.0",
+        "illuminate/bus": "^11.0|^12.0",
+        "illuminate/queue": "^11.0|^12.0",
+        "symfony/mailer": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^11.0",
+        "laravel/pint": "^1.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "AutomateFlow\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AutomateFlow\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AutomateFlow\\Laravel\\AutomateFlowServiceProvider"
+            ],
+            "aliases": {
+                "AutomateFlow": "AutomateFlow\\Laravel\\Facades\\AutomateFlow"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
