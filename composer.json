@@ -2,7 +2,15 @@
     "name": "automateflow/laravel",
     "description": "Connect a Laravel application to an AutomateFlow workspace: sync contacts, send mail through the transactional API, embed subscription forms, trigger automations, and receive signed webhooks.",
     "keywords": ["laravel", "automateflow", "email", "marketing", "automation", "transactional"],
+    "homepage": "https://github.com/netdevguru/automateflow-laravel",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "NETDEVGURU",
+            "email": "netdevguru@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "illuminate/support": "^11.0|^12.0",
